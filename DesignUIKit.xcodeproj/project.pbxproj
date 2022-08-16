@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92BA1D128AB3C8C0098E953 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D028AB3C8C0098E953 /* CustomImageView.swift */; };
+		E92BA1D728AB3D4C0098E953 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D328AB3D4C0098E953 /* Font.swift */; };
+		E92BA1D828AB3D4C0098E953 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D428AB3D4C0098E953 /* CustomBlurView.swift */; };
+		E92BA1D928AB3D4C0098E953 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D528AB3D4C0098E953 /* CustomTabBarViewController.swift */; };
+		E92BA1DA28AB3D4C0098E953 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D628AB3D4C0098E953 /* CustomUIView.swift */; };
 		E96D519128AA4B6D00E9C4DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D519028AA4B6D00E9C4DA /* AppDelegate.swift */; };
 		E96D519328AA4B6D00E9C4DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D519228AA4B6D00E9C4DA /* SceneDelegate.swift */; };
 		E96D519528AA4B6D00E9C4DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D519428AA4B6D00E9C4DA /* ViewController.swift */; };
@@ -16,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E92BA1CE28AB341E0098E953 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E92BA1CF28AB35C60098E953 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E92BA1D028AB3C8C0098E953 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		E92BA1D328AB3D4C0098E953 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		E92BA1D428AB3D4C0098E953 /* CustomBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
+		E92BA1D528AB3D4C0098E953 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		E92BA1D628AB3D4C0098E953 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		E96D518D28AA4B6D00E9C4DA /* DesignUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96D519028AA4B6D00E9C4DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96D519228AA4B6D00E9C4DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E92BA1D228AB3C970098E953 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E92BA1D428AB3D4C0098E953 /* CustomBlurView.swift */,
+				E92BA1D528AB3D4C0098E953 /* CustomTabBarViewController.swift */,
+				E92BA1D628AB3D4C0098E953 /* CustomUIView.swift */,
+				E92BA1D328AB3D4C0098E953 /* Font.swift */,
+				E92BA1D028AB3C8C0098E953 /* CustomImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E96D518428AA4B6C00E9C4DA = {
 			isa = PBXGroup;
 			children = (
+				E92BA1CE28AB341E0098E953 /* README.md */,
 				E96D518F28AA4B6D00E9C4DA /* DesignUIKit */,
 				E96D518E28AA4B6D00E9C4DA /* Products */,
 			);
@@ -59,7 +84,9 @@
 				E96D519028AA4B6D00E9C4DA /* AppDelegate.swift */,
 				E96D519228AA4B6D00E9C4DA /* SceneDelegate.swift */,
 				E96D519428AA4B6D00E9C4DA /* ViewController.swift */,
+				E92BA1D228AB3C970098E953 /* Helpers */,
 				E96D519628AA4B6D00E9C4DA /* Main.storyboard */,
+				E92BA1CF28AB35C60098E953 /* MyPlayground.playground */,
 				E96D519928AA4B6E00E9C4DA /* Assets.xcassets */,
 				E96D519B28AA4B6E00E9C4DA /* LaunchScreen.storyboard */,
 				E96D519E28AA4B6E00E9C4DA /* Info.plist */,
@@ -138,7 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92BA1D828AB3D4C0098E953 /* CustomBlurView.swift in Sources */,
+				E92BA1DA28AB3D4C0098E953 /* CustomUIView.swift in Sources */,
 				E96D519528AA4B6D00E9C4DA /* ViewController.swift in Sources */,
+				E92BA1D128AB3C8C0098E953 /* CustomImageView.swift in Sources */,
+				E92BA1D728AB3D4C0098E953 /* Font.swift in Sources */,
+				E92BA1D928AB3D4C0098E953 /* CustomTabBarViewController.swift in Sources */,
 				E96D519128AA4B6D00E9C4DA /* AppDelegate.swift in Sources */,
 				E96D519328AA4B6D00E9C4DA /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DesignUIKit/Info.plist;
@@ -299,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fibeApp.DesignUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -314,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DesignUIKit/Info.plist;
@@ -327,7 +359,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fibeApp.DesignUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
