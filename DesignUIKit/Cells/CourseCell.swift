@@ -10,7 +10,6 @@ import UIKit
 class CourseCell: UICollectionViewCell {
   
   let gradient = CAGradientLayer()
-  
   @IBOutlet weak var descriptionLabel: UILabel!
   @IBOutlet weak var subtitleLabel: UILabel!
   @IBOutlet weak var titleLabel: UILabel!
@@ -18,11 +17,12 @@ class CourseCell: UICollectionViewCell {
   @IBOutlet weak var logo: CustomImageView!
   @IBOutlet weak var banner: UIImageView!
   @IBOutlet weak var overlay: UIView!
-  override func layoutSubviews() {
+  
+  override public func layoutSubviews() {
     super.layoutSubviews()
     super.layoutIfNeeded()
   }
-  override func awakeFromNib() {
+  override public func awakeFromNib() {
     super.awakeFromNib()
     layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor
     layer.shadowOpacity = 0.25
@@ -32,10 +32,18 @@ class CourseCell: UICollectionViewCell {
     layer.cornerRadius = 30
     layer.cornerCurve = .continuous
     
-    gradient.startPoint = .zero
+    gradient.startPoint = CGPoint(x: 0, y: 0)
     gradient.endPoint = CGPoint(x: 1, y: 1)
     gradient.frame = overlay.frame
     gradient.cornerCurve = .continuous
     gradient.cornerRadius = 30
+    
+    overlay.layer.insertSublayer(gradient, at: 0)
+    overlay.layer.cornerRadius = 30
+    overlay.layer.cornerCurve = .continuous
+  }
+  
+  override public func prepareForReuse() {
+    super.prepareForReuse()
   }
 }
