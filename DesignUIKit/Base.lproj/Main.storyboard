@@ -31,7 +31,7 @@
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtA-e8-SHg" customClass="CustomBlurView" customModule="DesignUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="362.33333333333331"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="obi-uV-Fum">
-                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="362"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="362.33333333333331"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="O1T-cB-twt">
@@ -40,7 +40,7 @@
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Md-qc-Nbp">
                                                             <rect key="frame" x="0.0" y="217" width="358" height="145.33333333333337"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l7Y-jt-xJ9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="145"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="145.33333333333337"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftUI for iOS 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-qE-5f5">
@@ -317,12 +317,32 @@
                                             <constraint firstAttribute="height" constant="500" id="AKh-48-Rgi"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="350" id="wFX-N7-Yk4">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CourseTableCell" rowHeight="350" id="wFX-N7-Yk4">
                                                 <rect key="frame" x="0.0" y="50" width="358" height="350"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wFX-N7-Yk4" id="cby-Ur-OYk">
                                                     <rect key="frame" x="0.0" y="0.0" width="358" height="350"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background 3" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-I8-qTE">
+                                                            <rect key="frame" x="20" y="11" width="318" height="328"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 1" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-Ru-1Q7">
+                                                            <rect key="frame" x="40" y="31" width="278" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="FNr-IZ-Yka"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="8gh-I8-qTE" secondAttribute="bottom" id="6oa-wi-fPe"/>
+                                                        <constraint firstItem="8gh-I8-qTE" firstAttribute="leading" secondItem="cby-Ur-OYk" secondAttribute="leadingMargin" id="MFo-ir-Yld"/>
+                                                        <constraint firstItem="xNY-Ru-1Q7" firstAttribute="top" secondItem="cby-Ur-OYk" secondAttribute="topMargin" constant="20" id="b20-e7-Khl"/>
+                                                        <constraint firstItem="8gh-I8-qTE" firstAttribute="top" secondItem="cby-Ur-OYk" secondAttribute="topMargin" id="jFd-5g-5cc"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="xNY-Ru-1Q7" secondAttribute="trailing" constant="20" id="ovE-m8-u9b"/>
+                                                        <constraint firstItem="xNY-Ru-1Q7" firstAttribute="leading" secondItem="cby-Ur-OYk" secondAttribute="leadingMargin" constant="20" id="uP5-zv-qkg"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="8gh-I8-qTE" secondAttribute="trailing" id="vmd-65-Qz4"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -475,7 +495,9 @@
         </designable>
     </designables>
     <resources>
+        <image name="Background 3" width="350" height="350"/>
         <image name="Background01" width="330" height="464.5"/>
+        <image name="Illustration 1" width="310" height="217"/>
         <image name="Illustration 2" width="310" height="217"/>
         <image name="SwiftUI" width="32" height="32"/>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
