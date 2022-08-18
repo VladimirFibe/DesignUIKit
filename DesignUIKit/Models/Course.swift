@@ -16,6 +16,7 @@ class Course {
   var authors: [String]?
   var gradient: [CGColor]?
   var background: UIImage?
+  var section: [Section]?
   
   init(title: String,
        subtitle: String,
@@ -24,7 +25,9 @@ class Course {
        banner: UIImage,
        authors: [String]? = nil,
        gradient: [CGColor]? = nil,
-       background: UIImage? = nil)
+       background: UIImage? = nil,
+       section: [Section]? = nil)
+  
   {
     self.title = title
     self.subtitle = subtitle
@@ -34,6 +37,7 @@ class Course {
     self.authors = authors
     self.gradient = gradient
     self.background = background
+    self.section = section
   }
 }
 
@@ -44,15 +48,16 @@ let handbooks = [
            icon: #imageLiteral(resourceName: "SwiftUI.svg"),
            banner: #imageLiteral(resourceName: "Illustration 2.png"),
            authors: ["Stephanie Diep"],
-           gradient: [UIColor(red: 0.387, green: 0.041, blue: 0.55, alpha: 1).cgColor, UIColor(red: 0.251, green: 0.555, blue: 0.835, alpha: 1).cgColor]),
+           gradient: [UIColor(red: 0.387, green: 0.041, blue: 0.55, alpha: 1).cgColor, UIColor(red: 0.251, green: 0.555, blue: 0.835, alpha: 1).cgColor],
+          section: sections),
     Course(title: "React Hooks Handbook",
            subtitle: "30 sections - 3 hours", description: "A comprehensive series of tutorials on React Hooks and more!", icon: #imageLiteral(resourceName: "Flutter"),
            banner: UIImage(named: "Illustration 4")!,
            authors: ["Meng To, Stephanie Diep"], gradient: [
         UIColor(red: 0.51, green: 0.255, blue: 0.737, alpha: 1).cgColor,
         UIColor(red: 0.883, green: 0.283, blue: 0.523, alpha: 1).cgColor,
-        UIColor(red: 0.984, green: 0.647, blue: 0.545, alpha: 1).cgColor
-      ])
+        UIColor(red: 0.984, green: 0.647, blue: 0.545, alpha: 1).cgColor],
+           section: sections)
 ]
 
 let courses = [
@@ -63,7 +68,8 @@ let courses = [
            banner: UIImage(named: "Illustration 4")!,
            authors: ["Meng To"],
            gradient: [UIColor(red: 0.387, green: 0.041, blue: 0.55, alpha: 1).cgColor, UIColor(red: 0.251, green: 0.555, blue: 0.835, alpha: 1).cgColor],
-           background: UIImage(named: "Background 3")),
+           background: UIImage(named: "Background 3"),
+           section: sections),
     Course(title: "Flutter for Designers",
            subtitle: "20 sections - 3 hours",
            description: "Build a Flutter app for iOS and Android with custom layouts, animations and more!",
@@ -73,7 +79,8 @@ let courses = [
            gradient: [UIColor(red: 0.51, green: 0.255, blue: 0.737, alpha: 1).cgColor,
         UIColor(red: 0.883, green: 0.283, blue: 0.523, alpha: 1).cgColor,
         UIColor(red: 0.984, green: 0.647, blue: 0.545, alpha: 1).cgColor],
-           background: UIImage(named: "Background 3")),
+           background: UIImage(named: "Background 3"),
+           section: sections),
     Course(title: "React Hooks Advanced",
            subtitle: "20 sections - 3 hours",
            description: "Build a React app with custom layouts, animations and more!",
@@ -81,6 +88,7 @@ let courses = [
            banner: UIImage(named: "Illustration 2")!,
            authors: ["Meng To"],
            gradient: [UIColor(red: 0.387, green: 0.041, blue: 0.55, alpha: 1).cgColor, UIColor(red: 0.251, green: 0.555, blue: 0.835, alpha: 1).cgColor],
-           background: UIImage(named: "Background 5"))
+           background: UIImage(named: "Background 5"),
+           section: sections)
 ]
 

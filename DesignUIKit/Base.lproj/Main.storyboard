@@ -31,7 +31,7 @@
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtA-e8-SHg" customClass="CustomBlurView" customModule="DesignUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="362.33333333333331"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="obi-uV-Fum">
-                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="362.33333333333331"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="358" height="362"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="O1T-cB-twt">
@@ -40,7 +40,7 @@
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Md-qc-Nbp">
                                                             <rect key="frame" x="0.0" y="217" width="358" height="145.33333333333337"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l7Y-jt-xJ9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="145.33333333333337"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="145"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftUI for iOS 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-qE-5f5">
@@ -454,11 +454,27 @@
                         <outlet property="collectionView" destination="Gnn-dL-EB4" id="ith-m0-Oqk"/>
                         <outlet property="courseTableView" destination="lUz-cY-Nci" id="z6g-WU-c1z"/>
                         <outlet property="heightTableView" destination="wyW-pW-2er" id="Jp8-FX-Eh2"/>
+                        <segue destination="jdt-f2-Cap" kind="presentation" identifier="presentCourse" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Sw2-E9-kcO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1740" y="-1179.3838862559242"/>
+        </scene>
+        <!--Courses View Controller-->
+        <scene sceneID="KvA-Wp-Cbr">
+            <objects>
+                <viewController id="jdt-f2-Cap" customClass="CoursesViewController" customModule="DesignUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Scc-Oz-fvx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="F4b-ES-Xqm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsJ-9X-ek0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="-1179"/>
         </scene>
         <!--Learn Now-->
         <scene sceneID="oHV-VL-Wb3">

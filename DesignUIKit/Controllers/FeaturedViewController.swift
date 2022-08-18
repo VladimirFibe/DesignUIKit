@@ -21,7 +21,11 @@ class FeaturedViewController: UIViewController {
     super.viewDidLoad()
     setupViews()
   }
-
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let detailsVC = segue.destination as? CoursesViewController, let course = sender as? Course {
+      detailsVC.course = course
+    }
+  }
   func setupViews() {
     cardView.layer.cornerRadius = 30
     cardView.layer.cornerCurve = .continuous
@@ -80,4 +84,12 @@ extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
     section == 0 ? 0 : 20
   }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    let course = courses[indexPath.section]
+    performSegue(withIdentifier: "presentCourse", sender: course)
+  }
+  
+  func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat { 0 }
 }
