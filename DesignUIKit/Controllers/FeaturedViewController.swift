@@ -14,6 +14,7 @@ class FeaturedViewController: UIViewController {
   @IBOutlet weak var courseTableView: UITableView!
   @IBOutlet weak var blurView: UIVisualEffectView!
   
+  @IBOutlet weak var scrollView: UIScrollView!
   @IBOutlet weak var heightTableView: NSLayoutConstraint!
   
   private var tokens: Set<AnyCancellable> = []
@@ -45,6 +46,7 @@ class FeaturedViewController: UIViewController {
     courseTableView.publisher(for: \.contentSize)
       .sink { self.heightTableView.constant = $0.height }
       .store(in: &tokens)
+    scrollView.delegate = self
   }
 
 }
@@ -92,4 +94,19 @@ extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat { 0 }
+}
+
+extension FeaturedViewController: UIScrollViewDelegate {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let contentHeight = scrollView.contentSize.height
+    let lastScrollyPos = scrollView.contentOffset.y
+    let percentage = lastScrollyPos / contentHeight
+    if percentage <= 0.15 {
+      self.title = "Featured"
+    } else if percentage <= 0.33 {
+      self.title = "Handbooks"
+    } else {
+      self.title = "Courses"
+    }
+  }
 }
