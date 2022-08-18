@@ -6,13 +6,17 @@
 //
 
 import UIKit
-
+import Combine
 class FeaturedViewController: UIViewController {
 
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var cardView: UIView!
+  @IBOutlet weak var courseTableView: UITableView!
   @IBOutlet weak var blurView: UIVisualEffectView!
   
+  @IBOutlet weak var heightTableView: NSLayoutConstraint!
+  
+  private var tokens: Set<AnyCancellable> = []
   override func viewDidLoad() {
     super.viewDidLoad()
     setupViews()
@@ -31,6 +35,12 @@ class FeaturedViewController: UIViewController {
     collectionView.delegate = self
     collectionView.dataSource = self
     collectionView.layer.masksToBounds = false
+    courseTableView.delegate = self
+    courseTableView.dataSource = self
+    courseTableView.layer.masksToBounds = false
+    courseTableView.publisher(for: \.contentSize)
+      .sink { self.heightTableView.constant = $0.height }
+      .store(in: &tokens)
   }
 
 }
@@ -38,7 +48,7 @@ class FeaturedViewController: UIViewController {
 extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CourseCell", for: indexPath) as! CourseCell
-    let course = courses[indexPath.item]
+    let course = handbooks[indexPath.item]
     cell.titleLabel.text = course.title
     cell.subtitleLabel.text = course.subtitle
     cell.descriptionLabel.text = course.description
@@ -49,6 +59,25 @@ extension FeaturedViewController: UICollectionViewDelegate, UICollectionViewData
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    handbooks.count
+  }
+}
+
+extension FeaturedViewController: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    1
+  }
+  func numberOfSections(in tableView: UITableView) -> Int {
     courses.count
+  }
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "CourseTableCell", for: indexPath) as! CourseTableCell
+    let course = courses[indexPath.section]
+    cell.configure(with: course)
+    return cell
+  }
+  
+  func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    section == 0 ? 0 : 20
   }
 }
