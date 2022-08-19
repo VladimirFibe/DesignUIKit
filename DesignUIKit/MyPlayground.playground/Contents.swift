@@ -24,4 +24,8 @@ class MyViewController : UIViewController {
   }
 }
 // Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
+//PlaygroundPage.current.liveView = MyViewController()
+//    authorsLabel.text = "Taught by \(course?.authors?.formatted(.list(type: .and, widht: .standard)) ?? "Design+Code")"
+
+let text = ["Ivan", "Sergey", "Dmitry"].formatted(.list(type: .and, width: .standard))
+print(text)
