@@ -10,7 +10,6 @@
 		E92BA1D128AB3C8C0098E953 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D028AB3C8C0098E953 /* CustomImageView.swift */; };
 		E92BA1D728AB3D4C0098E953 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D328AB3D4C0098E953 /* Font.swift */; };
 		E92BA1D828AB3D4C0098E953 /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D428AB3D4C0098E953 /* CustomBlurView.swift */; };
-		E92BA1D928AB3D4C0098E953 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D528AB3D4C0098E953 /* CustomTabBarViewController.swift */; };
 		E92BA1DA28AB3D4C0098E953 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BA1D628AB3D4C0098E953 /* CustomUIView.swift */; };
 		E95543B028AC1269001022E9 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95543AF28AC1269001022E9 /* CourseCell.swift */; };
 		E96D519128AA4B6D00E9C4DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D519028AA4B6D00E9C4DA /* AppDelegate.swift */; };
@@ -22,8 +21,13 @@
 		E97E472228ADAD2600225FFC /* CourseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E472128ADAD2600225FFC /* CourseTableCell.swift */; };
 		E97E472428ADC0B700225FFC /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E472328ADC0B700225FFC /* CoursesViewController.swift */; };
 		E97E472628ADC3CF00225FFC /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E472528ADC3CF00225FFC /* Section.swift */; };
+		E984504028AF8526001AB4A5 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E984503F28AF8526001AB4A5 /* CustomTabBarController.swift */; };
 		E99C916628AE18D300BCA973 /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99C916528AE18D300BCA973 /* SectionCell.swift */; };
 		E9B8344328AC89A000549C03 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8344228AC89A000549C03 /* Course.swift */; };
+		E9B8738728B0913200826967 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8738628B0913100826967 /* TopicCell.swift */; };
+		E9B8738928B092B500826967 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8738828B092B500826967 /* Topic.swift */; };
+		E9CB5D7A28B0714B0032302D /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB5D7928B0714B0032302D /* SectionCollectionViewCell.swift */; };
+		E9CB5D7C28B072700032302D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB5D7B28B072700032302D /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +36,6 @@
 		E92BA1D028AB3C8C0098E953 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		E92BA1D328AB3D4C0098E953 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		E92BA1D428AB3D4C0098E953 /* CustomBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
-		E92BA1D528AB3D4C0098E953 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
 		E92BA1D628AB3D4C0098E953 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		E95543AF28AC1269001022E9 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		E96D518D28AA4B6D00E9C4DA /* DesignUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,8 +49,13 @@
 		E97E472128ADAD2600225FFC /* CourseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableCell.swift; sourceTree = "<group>"; };
 		E97E472328ADC0B700225FFC /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		E97E472528ADC3CF00225FFC /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		E984503F28AF8526001AB4A5 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		E99C916528AE18D300BCA973 /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		E9B8344228AC89A000549C03 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		E9B8738628B0913100826967 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
+		E9B8738828B092B500826967 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		E9CB5D7928B0714B0032302D /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9CB5D7B28B072700032302D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				E92BA1D428AB3D4C0098E953 /* CustomBlurView.swift */,
-				E92BA1D528AB3D4C0098E953 /* CustomTabBarViewController.swift */,
 				E92BA1D628AB3D4C0098E953 /* CustomUIView.swift */,
 				E92BA1D328AB3D4C0098E953 /* Font.swift */,
 				E92BA1D028AB3C8C0098E953 /* CustomImageView.swift */,
+				E984503F28AF8526001AB4A5 /* CustomTabBarController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -113,6 +121,7 @@
 			children = (
 				E96D519428AA4B6D00E9C4DA /* FeaturedViewController.swift */,
 				E97E472328ADC0B700225FFC /* CoursesViewController.swift */,
+				E9CB5D7B28B072700032302D /* ExploreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +132,8 @@
 				E95543AF28AC1269001022E9 /* CourseCell.swift */,
 				E97E472128ADAD2600225FFC /* CourseTableCell.swift */,
 				E99C916528AE18D300BCA973 /* SectionCell.swift */,
+				E9CB5D7928B0714B0032302D /* SectionCollectionViewCell.swift */,
+				E9B8738628B0913100826967 /* TopicCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -132,6 +143,7 @@
 			children = (
 				E9B8344228AC89A000549C03 /* Course.swift */,
 				E97E472528ADC3CF00225FFC /* Section.swift */,
+				E9B8738828B092B500826967 /* Topic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,7 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92BA1D828AB3D4C0098E953 /* CustomBlurView.swift in Sources */,
+				E9B8738928B092B500826967 /* Topic.swift in Sources */,
+				E9CB5D7A28B0714B0032302D /* SectionCollectionViewCell.swift in Sources */,
 				E92BA1DA28AB3D4C0098E953 /* CustomUIView.swift in Sources */,
+				E984504028AF8526001AB4A5 /* CustomTabBarController.swift in Sources */,
+				E9CB5D7C28B072700032302D /* ExploreViewController.swift in Sources */,
 				E9B8344328AC89A000549C03 /* Course.swift in Sources */,
 				E96D519528AA4B6D00E9C4DA /* FeaturedViewController.swift in Sources */,
 				E97E472228ADAD2600225FFC /* CourseTableCell.swift in Sources */,
@@ -216,9 +232,9 @@
 				E95543B028AC1269001022E9 /* CourseCell.swift in Sources */,
 				E97E472628ADC3CF00225FFC /* Section.swift in Sources */,
 				E92BA1D128AB3C8C0098E953 /* CustomImageView.swift in Sources */,
+				E9B8738728B0913200826967 /* TopicCell.swift in Sources */,
 				E99C916628AE18D300BCA973 /* SectionCell.swift in Sources */,
 				E92BA1D728AB3D4C0098E953 /* Font.swift in Sources */,
-				E92BA1D928AB3D4C0098E953 /* CustomTabBarViewController.swift in Sources */,
 				E96D519128AA4B6D00E9C4DA /* AppDelegate.swift in Sources */,
 				E96D519328AA4B6D00E9C4DA /* SceneDelegate.swift in Sources */,
 			);

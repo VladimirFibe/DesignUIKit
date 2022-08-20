@@ -27,5 +27,16 @@ class MyViewController : UIViewController {
 //PlaygroundPage.current.liveView = MyViewController()
 //    authorsLabel.text = "Taught by \(course?.authors?.formatted(.list(type: .and, widht: .standard)) ?? "Design+Code")"
 
-let text = ["Ivan", "Sergey", "Dmitry"].formatted(.list(type: .and, width: .standard))
-print(text)
+//let text = ["Ivan", "Sergey", "Dmitry"].formatted(.list(type: .and, width: .standard))
+//print(text)
+
+Int.max
+Int.min
+UInt.max
+UInt.min
+Double.greatestFiniteMagnitude
+Double.leastNormalMagnitude
+Double.leastNonzeroMagnitude
+Float.greatestFiniteMagnitude
+Float.leastNormalMagnitude
+Float.leastNonzeroMagnitude

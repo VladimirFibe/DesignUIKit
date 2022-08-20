@@ -33,7 +33,7 @@ let sections = [
             subtitle: "SwiftUI Concurrency",
             description: "Learn about the formatted(date:time:) method and AsyncImage",
             icon: #imageLiteral(resourceName: "SwiftUI.svg"),
-            banner: UIImage(named: "Illustration 5")),
+            banner: UIImage(named: "Illustration 2")),
     Section(title: "Colors and Shadows",
             subtitle: "Flutter for Designers",
             description: "Read about the design guidelines and how you can use color to maximize your best views",
